@@ -1,0 +1,9 @@
+<h4>TinyURL</h4>
+
+<%= form_with model: @url, url: root_path do |f| %>
+  <%= "Your Long URL" %><br>
+  <%= f.text_field :origin %><br>
+  <%= f.submit "Make TinyURL!"%><br><br>
+  <%= "TinyURL" %><br>
+  <%= text_field_tag 'TinyURL', @abbreviated, {readonly: true} %><br>
+<% end %>
