@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_02_081102) do
+ActiveRecord::Schema.define(version: 2022_02_04_054847) do
 
   create_table "urls", charset: "utf8mb4", force: :cascade do |t|
-    t.string "origin"
-    t.string "abbreviated"
+    t.string "origin", null: false
+    t.string "abbreviated", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
